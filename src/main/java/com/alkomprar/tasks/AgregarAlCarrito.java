@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static com.alkomprar.userinterfaces.ConfirmacionCarritoPage.CONTINUAR_ELEMENTO;
+import static com.alkomprar.userinterfaces.ConfirmacionCarritoPage.CERRAR_MODAL;
 import static com.alkomprar.userinterfaces.DetalleArticuloPage.AGREGAR_ELEMENTO_CARRITO;
 import static com.alkomprar.userinterfaces.DetalleArticuloPage.DIV_PRIMER_ELEMENTO;
 import static com.alkomprar.userinterfaces.MenuPage.CATEGORIA;
@@ -35,7 +35,8 @@ public class AgregarAlCarrito implements Task {
                 Scroll.to(DIV_PRIMER_ELEMENTO).andAlignToTop(),
                 WaitUntil.the(AGREGAR_ELEMENTO_CARRITO, isClickable()),
                 Click.on(AGREGAR_ELEMENTO_CARRITO),
-                Click.on(CONTINUAR_ELEMENTO)
+                WaitUntil.the(CERRAR_MODAL, isClickable()),
+                Click.on(CERRAR_MODAL)
         );
     }
 }
