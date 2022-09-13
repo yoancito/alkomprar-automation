@@ -9,5 +9,5 @@ Característica: Add to car
     Entonces debe ver 4 articulos en el carrito
 
   Escenario: Comprar un Iphone 13
-    Cuando Rodolfo quiere comprar un Iphone 13
-    Entonces debe ver en el carrito de comprar Iphone 13
+    Cuando "Rodolfo" quiere comprar un "iPhone 13"
+    Entonces debe ver en el carrito de comprar "iPhone 13"
