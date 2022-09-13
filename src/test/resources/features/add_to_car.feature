@@ -5,7 +5,7 @@ Característica: Add to car
   Para comprar
 
   Escenario: agregar 4 productos al carito y de 4 categorias distintas
-    Cuando Rodolfo quiere comprar un articulo de las categorias Celulares, Computadores, TV  y Llantas
+    Cuando "Rodolfo" quiere comprar un articulo de las categorias "Celulares", "Computadores", "TV"  y "Llantas"
     Entonces debe ver 1 articulos en el carrito
 
   Escenario: Comprar un Iphone 13
