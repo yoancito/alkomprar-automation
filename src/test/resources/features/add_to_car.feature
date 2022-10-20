@@ -4,10 +4,14 @@ Característica: Add to car
   Quiero agregar productos al carro de compras
   Para comprar
 
-  Escenario: agregar 4 productos al carito y de 4 categorias distintas
-    Cuando "Rodolfo" quiere comprar un articulo de las categorias "Celulares", "Computadores", "TV"  y "Llantas"
-    Entonces debe ver 4 articulos en el carrito
+  Escenario: Ingresar login mediante el correo
+    Cuando "Rodolfo" quiere ingresar al login
+    Entonces debe abrir sesion
 
-  Escenario: Comprar un Iphone 13
-    Cuando "Rodolfo" quiere comprar un "iPhone 13"
-    Entonces debe ver en el carrito de comprar "iPhone 13"
+  Escenario: Agregar un producto y modificar la cantidad
+    Cuando "Rodolfo" quiere agregar un producto de la categoria "TV" y modificar el carrito para tener 2 de cantidad de un mismo producto
+    Entonces debe ver la alerta "La cantidad del producto ha sido actualizada."
+
+  Escenario: Ir al apartado para registrar un seguro de accidente personal
+    Cuando "Rodolfo" quiere registrar un "Seguro accidentes personales"
+    Entonces debe ver la pagina con el boton de "Registra tu seguro"
